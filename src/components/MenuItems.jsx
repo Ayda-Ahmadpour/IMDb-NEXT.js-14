@@ -4,8 +4,8 @@ export default function MenuItems({ title, address, Icon }) {
   return (
     <li>
       <Link href={address}>
-        <Icon />
-        <span>{title}</span>
+        <Icon className="inline-block sm:hidden text-xl hover:text-amber-400 transition-all duration-300 ease-in-out" />
+        <span className="hidden sm:inline-block">{title}</span>
       </Link>
     </li>
   );
