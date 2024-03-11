@@ -8,7 +8,7 @@ import ThemeChanger from "./ThemeChanger";
 
 export default function Header() {
   return (
-    <nav className="flex justify-between w-full items-center p-3 border-b-2 border-b-red-500">
+    <nav className="flex justify-between w-full items-center p-3 ">
       <ul className="flex gap-4 h-full">
         <Menu title="Home" address="/" Icon={FaHome} />
         <Menu title="About" address="/about" Icon={FaInfoCircle} />
@@ -19,7 +19,7 @@ export default function Header() {
           <Image
             src={MyMovie}
             alt=""
-            className="block w-20 rounded-md cursor-pointer"
+            className="block w-20 rounded-md cursor-pointer  p-2 bg-amber-200 dark:bg-amber-100"
           />
         </Link>
       </div>
