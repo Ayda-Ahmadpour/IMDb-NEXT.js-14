@@ -8,7 +8,7 @@ import ThemeChanger from "./ThemeChanger";
 
 export default function Header() {
   return (
-    <nav className="flex justify-between w-full items-center p-3 border-b-2 bg-red-300 border-b-orange-300">
+    <nav className="flex justify-between w-full items-center p-3 border-b-2 border-b-red-500">
       <ul className="flex gap-4 h-full">
         <Menu title="Home" address="/" Icon={FaHome} />
         <Menu title="About" address="/about" Icon={FaInfoCircle} />
