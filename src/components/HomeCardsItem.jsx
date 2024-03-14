@@ -5,16 +5,16 @@ import { FaHeart } from "react-icons/fa";
 
 export default function HomeCardsItem({ movie }) {
   return (
-    <Link href={`/movie/${movie.id}`} className="p-3 mt-3">
-      <div className="flex flex-col gap-4 p-4 bg-gray-200 dark:bg-gray-800 rounded-md border-2 border-red-400">
+    <Link href={`/movie/${movie.id}`} className="p-3 mt-3 hover:opacity-70">
+      <div className="flex flex-col gap-4 items-center p-4 bg-gray-200 dark:bg-gray-800 rounded-md border-2 border-red-400">
         <Image
           alt="movie poster"
           src={`https://image.tmdb.org/t/p/original/${
             movie.poster_path || movie.backdrop_path
           }`}
-          width={400}
-          height={200}
-          className="rounded-md border-2 border-gray-300 dark:border-gray-700"
+          width={250}
+          height={150}
+          className="rounded-md border-2 border-gray-300 dark:border-gray-700 "
         />
         <h1 className="text-xl font-bold text-center line-clamp-1">
           {movie.title || movie.name || "Title Not Available"}
