@@ -5,7 +5,7 @@ import { FaHeart } from "react-icons/fa";
 
 export default function HomeCardsItem({ movie }) {
   return (
-    <Link href={`/movie/${movie.id}`} className="mt-3 hover:opacity-70">
+    <Link href={`/movie/${movie.id}`} className="m-3 hover:opacity-70">
       <div className="flex flex-col gap-4 items-center p-4 bg-gray-200 dark:bg-gray-800 rounded-md border-2 border-red-400">
         <Image
           alt="movie poster"
@@ -14,7 +14,7 @@ export default function HomeCardsItem({ movie }) {
           }`}
           width={500}
           height={150}
-          className="rounded-md border-2 border-gray-300 dark:border-gray-700 "
+          className="rounded-md border-2 border-gray-300 dark:border-gray-700 h-72"
         />
         <h1 className="text-xl font-bold text-center line-clamp-1">
           {movie.title || movie.name || "Title Not Available"}
