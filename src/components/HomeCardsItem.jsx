@@ -22,13 +22,15 @@ export default function HomeCardsItem({ movie }) {
         <p className="line-clamp-3 text-sm text-center">
           {movie.overview || "description Not Available"}
         </p>
-        <span className="text-left font-bold">
-          {movie.release_date || movie.first_air_date}
-        </span>
-        <span>
-          <span>FaHeart</span>
-          <span>{movie.vote_count}</span>
-        </span>
+        <div className="flex justify-between items-center w-full">
+          <span className="text-left font-bold">
+            {movie.release_date || movie.first_air_date}
+          </span>
+          <span className="flex items-center">
+            <FaHeart className="text-orange-600 mr-3" />
+            <span>{movie.vote_count}</span>
+          </span>
+        </div>
       </div>
     </Link>
   );
