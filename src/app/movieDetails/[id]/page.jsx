@@ -11,20 +11,22 @@ export default async function MovieDetails({ params }) {
   console.log(res.data);
 
   return (
-    <div>
-      <h1>{res.data.title}</h1>
-      <p>{res.data.overview}</p>
-      <p>{res.data.release_date}</p>
-      <p>{res.data.vote_count}</p>
+    <div className="flex w-full p-6 mt-10">
       <Image
         alt={res.data.title || res.data.name}
         src={`https://image.tmdb.org/t/p/original/${
           res.data.poster_path || res.data.backdrop_path
         }`}
-        width={500}
-        height={150}
-        className="rounded-md border-2 border-gray-300 dark:border-gray-700 h-80"
+        width={300}
+        height={250}
+        className="rounded-md border-2 border-gray-300 dark:border-gray-700"
       />
+      <div className="flex flex-col justify-center space-y-5 ml-24">
+        <h1>{res.data.title}</h1>
+        <p>{res.data.overview}</p>
+        <p>{res.data.release_date}</p>
+        <p>{res.data.vote_count}</p>
+      </div>
     </div>
   );
 }
