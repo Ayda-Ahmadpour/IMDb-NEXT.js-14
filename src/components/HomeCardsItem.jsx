@@ -5,10 +5,10 @@ import { FaHeart } from "react-icons/fa";
 
 export default function HomeCardsItem({ movie }) {
   return (
-    <Link href={`/movie/${movie.id}`} className="m-3 hover:opacity-70">
+    <Link href={`/movieDetails/${movie.id}`} className="m-3 hover:opacity-70">
       <div className="flex flex-col gap-4 items-center p-4 bg-gray-200 dark:bg-gray-800 rounded-md border-2 border-red-400">
         <Image
-          alt="movie poster"
+          alt={movie.title || movie.name}
           src={`https://image.tmdb.org/t/p/original/${
             movie.poster_path || movie.backdrop_path
           }`}
