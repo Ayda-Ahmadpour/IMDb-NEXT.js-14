@@ -18,7 +18,7 @@ export default function Header() {
         <Link href={"/"}>
           <Image
             src={MyMovie}
-            alt=""
+            alt="MyMovie"
             className="block w-20 rounded-md cursor-pointer  p-2 bg-amber-200 dark:bg-amber-100"
           />
         </Link>

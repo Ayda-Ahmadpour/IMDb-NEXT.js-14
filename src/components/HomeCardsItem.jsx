@@ -14,7 +14,7 @@ export default function HomeCardsItem({ movie }) {
           }`}
           width={500}
           height={150}
-          className="rounded-md border-2 border-gray-300 dark:border-gray-700 h-72"
+          className="rounded-md border-2 border-gray-300 dark:border-gray-700 h-80"
         />
         <h1 className="text-xl font-bold text-center line-clamp-1">
           {movie.title || movie.name || "Title Not Available"}
